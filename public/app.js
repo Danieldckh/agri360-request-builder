@@ -357,7 +357,7 @@
 
   // ── Load client info ─────────────────────────────────────
   if (clientIdNum) {
-    fetch('/api/clients/' + clientIdNum, { headers: jsonHeaders() })
+    fetch('/api/request-forms/client/' + clientIdNum, { headers: jsonHeaders() })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (client) {
         if (client && client.name) {
