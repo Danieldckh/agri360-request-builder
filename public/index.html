@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Materials — Form Builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="fb-header">
+  <div class="fb-header-inner">
+    <div class="fb-brand">
+      <div class="fb-wordmark"><span class="pro">Pro</span><span class="agri">Agri</span></div>
+      <div class="fb-page-title">Request Materials &mdash; Form Builder</div>
+    </div>
+    <div class="fb-client-name" id="clientName"></div>
+  </div>
+</header>
+
+<div class="fb-workspace">
+
+  <!-- LEFT: Draggable palette + saved templates -->
+  <aside class="fb-palette">
+    <div class="fb-palette-section">
+      <h3 class="fb-palette-label">Field Types &mdash; drag into a card</h3>
+      <div id="paletteList"></div>
+    </div>
+    <div class="fb-palette-section">
+      <h3 class="fb-palette-label">Templates</h3>
+      <div id="templateList"></div>
+      <button class="fb-btn" id="saveTemplateBtn" style="width:100%;margin-top:8px;">Save Current as Template</button>
+    </div>
+  </aside>
+
+  <!-- RIGHT: Canvas with question cards -->
+  <section class="fb-canvas">
+
+    <div id="successMsg"></div>
+
+    <input type="text" class="fb-name-input" id="formName"
+           placeholder="Form Name (e.g. 'Logo Brief Questionnaire')">
+
+    <div class="fb-toolbar">
+      <button class="fb-btn fb-btn-primary" id="publishBtn" style="margin-left:auto;">Publish &amp; Open Portal Preview</button>
+    </div>
+
+    <div id="cardsWrap"></div>
+
+    <div class="fb-add-card" id="addCardBtn">+ Add question card (or drop a field here)</div>
+
+  </section>
+
+</div>
+
+<script src="/config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

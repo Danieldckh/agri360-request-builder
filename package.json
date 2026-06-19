@@ -1,0 +1,16 @@
+{
+  "name": "agri360-request-builder",
+  "version": "1.0.0",
+  "description": "Standalone Request Materials Form Builder for the Agri360 CRM. Staff drag field types into question cards, save/load templates, and publish a fillable client-portal form. Proxies /api/* to the CRM, injecting the shared builder key server-side.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "private": true
+}
